@@ -1,0 +1,333 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+ .hamburger {
+    padding: 0px 25px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible; 
+}
+.hamburger:hover {
+    opacity: 1; 
+}
+.hamburger-box {
+    width: 20px;
+    height: 24px;
+    display: inline-block;
+    position: relative; 
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; 
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; 
+}
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; 
+}
+.hamburger-inner::before {
+    top: -10px; 
+}
+.hamburger-inner::after {
+    bottom: -10px; 
+}
+  
+  /*
+   * Slider
+   */
+
+.hamburger--slider .hamburger-inner {
+    top: 2px; 
+}
+.hamburger--slider .hamburger-inner::before {
+    top: 10px;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
+    transition-duration: 0.15s; 
+}
+.hamburger--slider .hamburger-inner::after {
+    top: 20px; 
+}
+.hamburger--slider.is-active .hamburger-inner {
+    transform: translate3d(0, 10px, 0) rotate(45deg); 
+}
+.hamburger--slider.is-active .hamburger-inner::before {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0; 
+}
+.hamburger--slider.is-active .hamburger-inner::after {
+    transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+  
+
+/*--------------------End Hamburgers--------------------*/
+
+#hamburger {
+    position: fixed;
+    z-index: 200;
+    display: none;
+    top: 40px;
+    right: 20px;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar {
+    font-family: 'Montserrat', sans-serif;
+    margin: 45px;
+    float: right;
+}
+
+.nav-bar a {
+    color: black;
+    margin-left: 20px;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.nav-bar a:hover {
+    opacity: 0.3;
+}
+
+.logo {
+    position: relative;
+    width: 250px;
+    margin: 30px;
+    background-color: white;
+    padding: 20px 20px 10px 20px;
+    border: 2px black solid;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+    z-index: 200;
+}
+
+.logo:hover {
+    background-color: rgba(255, 255, 355, 0);
+}
+
+.left-side {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50vw;
+    height: 100vh;
+    background-image: url("https://images.pexels.com/photos/911758/pexels-photo-911758.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.center-text {
+    /*font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -40%);
+    z-index: 2;
+}
+
+.center-text h1 {
+    font-size: 60px;
+}
+
+.center-text h2 {
+    display: inline-block;
+    width: 300px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: white;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+.center-text .underline-1 {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    margin-top: -20px;
+    margin-left: 55px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.center-text .underline-2 {
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    margin-top: -20px;
+    margin-left: -50px;
+    background-color: black;
+}
+
+.thin {
+    font-weight: 400;
+}
+
+.red {
+    color: black;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px black solid;
+    border-bottom: 3px black solid;
+    border: 3px black solid;
+}
+
+.right-vertical-line {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: black;
+    height: 200px;
+    width: 3px;
+}
+
+.welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 70px;
+    transform: rotate(-90deg);
+    font-weight: 500;
+}
+
+.more-info-button {
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px 10px 20px;
+    border: 2px black solid;
+    background-color: black;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.more-info-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.copyright {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+    font-weight: 500;
+    border: 2px black solid;
+    padding: 10px 10px 6px 10px;
+}
+
+.dots {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(3%, -50%);
+    z-index: 1;
+}
+
+.mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 150;
+    left: 0px;
+    right: 0px;
+    padding-top: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.mobile-menu a {
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    border-bottom: 2px black solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.active-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mobile-menu a:nth-child(1) {
+    border-top: 2px black solid;
+}
+
+.mobile-menu a:hover {
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-bar a {
+        display: none;
+    }
+    #hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo {
+        width: 150px;
+        padding: 10px 10px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logo {
+        width: 100px;
+        padding: 10px 10px 5px 10px;
+    }
+}

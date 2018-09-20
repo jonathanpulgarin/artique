@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTIQUE | HOME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <link rel="shortcut icon" href="images/"/>
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="specifications.html">SPECIFICATIONS</a>
+            <a href="plan.html">PLAN</a>
+            <a href="team.html">TEAM</a>
+        </div>
+        <section class="main-container">
+            <a href="index.html">
+                <img class="logo" src="images/ARTIQUE-3.png">
+            </a>
+            <div class="nav-bar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+            </div>
+            <div onclick="menutoggle();" id="hamburger" class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <div class="left-side"></div>
+            <div class="center-text">
+                <h1><span class="thin">THIS IS </span><span class="red">ARTIQUE</span></h1>
+                <br>
+                <div class="underline-1"></div>
+                <br>
+                <h2>Where artists meet</h2>
+                <br>
+                <div class="underline-2"></div>
+                <br>
+                <a href="">
+                    <div class="more-info-button">More Info</div>
+                </a>
+            </div>
+            <p class="welcome">welcome</p>
+            <div class="right-vertical-line"></div>
+            <p class="copyright">© 2018 ARTIQUE</p>
+            <img class="dots" src="images/dots.png">
+        </section>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            function menutoggle() {
+                $("#hamburger").toggleClass("is-active");
+                $("body").toggleClass("page-scroll-deactivate");
+                $(".mobile-menu").toggleClass("active-menu");
+            }
+        </script>
+    </body>
+</html>
