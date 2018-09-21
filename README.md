@@ -1,2 +1,2 @@
-# artique
+# ARTIQUE
 Artist Review Site
