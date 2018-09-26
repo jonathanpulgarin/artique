@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTIQUE | BRANDING</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/branding.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png"/>
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="specifications.html">SPECIFICATIONS</a>
+            <a href="plan.html">PLAN</a>
+            <a href="team.html">TEAM</a>
+        </div>
+        <section class="main-container branding-main">
+            <a href="index.html">
+                <img class="logo" src="images/artique-logo-main-blue.png">
+            </a>
+            <div class="nav-bar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+            </div>
+            <div onclick="menutoggle();" id="hamburger" class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <div class="title-container">
+                <h1 class="main-title">BRANDING GUIDE</h1>
+            </div>
+            <div class="branding-guide-container">
+                <div class="branding-guide">
+                    <h2>FONTS</h2>
+                    <h3 class="montserrat">Montserrat</h3>
+                    <p class="montserrat abc">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p class="montserrat abc">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p class="montserrat fw700 bold-title">Header Titles - Montserrat / Bold</p>
+                    <p class="montserrat fw400">Paragraphs - Montserrat / Regular</p>
+                    <p class="montserrat bold-title fw700">Font Weights</p>
+                    <p class="montserrat fw100">Thin</p>
+                    <p class="montserrat fw200">Extra-Light</p>
+                    <p class="montserrat fw300">Light</p>
+                    <p class="montserrat fw400">Regular</p>
+                    <p class="montserrat fw500">Medium</p>
+                    <p class="montserrat fw600">Semi-Bold</p>
+                    <p class="montserrat fw700">Bold</p>
+                    <p class="montserrat fw800">Extra-Bold</p>
+                    <p class="montserrat fw900">Black</p>
+                    
+                    <h3 class="arial">Arial</h3>
+                    <p class="arial abc">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                    <p class="arial abc">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                    <p class="arial bold-title fw700">Font Weights</p>
+                    <p class="arial fw400">Regular</p>
+                    <p class="arial fw700">Bold</p>
+                    <h2>COLORS</h2>
+                    <div class="color-container">
+                        <div class="color-block">
+                            <div class="color-block-color color-0B24FB"></div>
+                            <div class="color-block-info">
+                                <p>#0B24FB</p>
+                                <p class="color-block-info-type">primary</p>
+                            </div>
+                        </div>
+                        <div class="color-block">
+                            <div class="color-block-color color-000000"></div>
+                            <div class="color-block-info">
+                                <p>#000000</p>
+                                <p class="color-block-info-type">secondary</p>
+                            </div>
+                        </div>
+                        <div class="color-block">
+                            <div class="color-block-color color-fdfbfb"></div>
+                            <div class="color-block-info">
+                                <p>#fdfbfb</p>
+                                <p class="color-block-info-type">secondary</p>
+                            </div>
+                        </div>
+                        <div class="color-block">
+                            <div class="color-block-color color-ebedee"></div>
+                            <div class="color-block-info">
+                                <p>#ebedee</p>
+                                <p class="color-block-info-type">secondary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer">
+            <a href="index.html">
+                <img class="logo" src="images/artique-logo-main-blue.png">
+            </a>
+            <br>
+            <div class="link-container">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+                <a href="branding.html">BRANDING</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <p class="copyright">© 2018 ARTIQUE</p>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            function menutoggle() {
+                $("#hamburger").toggleClass("is-active");
+                $("body").toggleClass("page-scroll-deactivate");
+                $(".mobile-menu").toggleClass("active-menu");
+            }
+        </script>
+    </body>
+</html>

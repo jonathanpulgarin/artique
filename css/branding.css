@@ -1,0 +1,191 @@
+.title-container {
+    width: 100%;
+    text-align: center;
+}
+
+.main-title {
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
+    border-left: 1px rgba(0, 0, 0, 0.1) solid;
+    border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    border-bottom: 3px #0B24FB solid;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.branding-guide-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.branding-guide {
+    display: inline-block;
+    width: 90%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.branding-guide h2 {
+    margin-top: 20px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px black solid;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
+    border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.branding-guide h3 {
+    color: #0B24FB;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    border-left: 3px #0B24FB solid;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+    background-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: min-content;
+}
+
+.branding-guide p {
+    font-size: 22px;
+}
+
+.branding-guide .color-block-info-type {
+    font-size: 14px;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arial {
+    font-family: Arial, sans-serif;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold-title {
+    margin-top: 20px;
+}
+
+.fw100 {
+    font-weight: 100;
+}
+.fw200 {
+    font-weight: 200;
+}
+.fw300 {
+    font-weight: 300;
+}
+.fw400 {
+    font-weight: 400;
+}
+.fw500 {
+    font-weight: 500;
+}
+.fw600 {
+    font-weight: 600;
+}
+.fw700 {
+    font-weight: 700;
+}
+.fw800 {
+    font-weight: 800;
+}
+.fw900 {
+    font-weight: 900;
+}
+
+.font-table {
+    width: 100%;
+        margin-bottom: 50px;
+}
+
+.font-table td {
+    vertical-align: top;
+}
+
+.abc {
+    margin-bottom: 10px;
+}
+
+.color-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.color-block {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.color-block-color {
+    width: 100%;
+    height: 200px;
+}
+
+.color-ffffff {
+    background-color: #ffffff;
+}
+.color-0B24FB {
+    background-color: #0B24FB;
+}
+.color-000000 {
+    background-color: #000000;
+}
+.color-fdfbfb{
+    background-color: #fdfbfb;
+}
+.color-ebedee {
+    background-color: #ebedee;
+}
+
+.color-block-info {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width: 950px) {
+    .font-table td {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    h1, .main-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1, .main-title {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTIQUE | SPECIFICATIONS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/specifications.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png"/>
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="specifications.html">SPECIFICATIONS</a>
+            <a href="plan.html">PLAN</a>
+            <a href="team.html">TEAM</a>
+        </div>
+        <section class="main-container">
+            <a href="index.html">
+                <img class="logo" src="images/artique-logo-main-blue.png">
+            </a>
+            <div class="nav-bar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+            </div>
+            <div onclick="menutoggle();" id="hamburger" class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <!-- START HERE -->
+            <div class="specifications-main">
+                <h1 class="main-title">SPECIFICATIONS</h1>
+                <div class="info-container">
+                    <p class="special-p">The purpose of this project, Artique, is to create a site to help artists share and contribute to other artists their personal creations and to add comments on others. We intend to let artists post their ideas and have the option to have other artists or curators to allow for professional suggestions to aid the original artist in development of their works.</p>
+                    <h2>List of Deliverables</h2>
+                    <ul>
+                        <li>Social media app to let artists come together to share ideas and work</li>
+                        <li>Non-artists or “fans” can make a profile to follow their favorite artists</li>
+                        <li>“Curators” can sign up and comment on artists to give advice and other suggestions</li>
+                        <li>Database for artists, curators, or fans to sign in and maintain their profiles</li>
+                        <li>Interactivity for all users for the best possible experience</li>
+                        <li>Comment section for artists or fans to add praise, curators and artists can make changes as suggestions to artists’ work</li>
+                    </ul>
+                    <h2>Use Case Analysis</h2>
+                    <p class="extra-margin">Artist A wants to share his work with the world but feels it still needs some help to fulfill its potential. A friend of Artist A introduces them to the site "Artique" and shows them some of the features the site has to offer. Artist A is excited about this site and begins to explore the features their friend didn't show them and browses the site and looks at the artists work that already exists on it. Artist A enjoys the full social media aspect of the site ranging from gaining followers and the ability to follow others in support of their works. Artist A feels happy to have found this site.</p>
+                    <p class="extra-margin">Person A has a real eye for art and can quickly tell what looks good and what needs some improving on. All the websites that let people post their work doesn't offer the chance to really let users have a say in the work being posted even though Person A wants to give adivce that would improve the work. Person A searches online and comes across the site "Artique" and begins to explore the site and what it has to offer. Person A really becomes excited when they find out the site has a "curator" option that lets artists ask for advice from people with a good rating and begins to search for work that may need some improving on. While browsing, Person A comes across many different art styles and begins to put suggestions on pieces that really need some help. Person A starts to feel overjoyed to have found this site.</p>
+                    <p class="extra-margin extra-margin-bottom">Person B on the other hand, has no real skill when it comes down to art but enjoys it enough that they find amusement in praising artists work. Person B finds out about the site "Artique" through various friends on their social media feed and searches for the site. Upon logging on to the site, Person B is taken away from the presentation of the site and quickly makes a profile. From initial the login, Person B begins to search for art they find aesthetically pleasing and overall enjoys the brand new social media they have just discovered. Person B goes on to follow some well known artists to artists who barely have begun posting their works online and starts to like and comment on pieces they enjoy.</p>
+                    <div class="primary-btn-container">
+                        <a href="plan.html" class="primary-btn">View Plan</a>
+                        <a href="branding.html" class="primary-btn">View Branding Guide</a>
+                        <a href="team.html" class="primary-btn">View Team</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="index.html">
+                    <img class="logo" src="images/artique-logo-main-blue.png">
+                </a>
+                <br>
+                <div class="link-container">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="specifications.html">SPECIFICATIONS</a>
+                    <a href="plan.html">PLAN</a>
+                    <a href="team.html">TEAM</a>
+                    <a href="branding.html">BRANDING</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <p class="copyright">© 2018 ARTIQUE</p>
+            </div>
+        </section>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            function menutoggle() {
+                $("#hamburger").toggleClass("is-active");
+                $("body").toggleClass("page-scroll-deactivate");
+                $(".mobile-menu").toggleClass("active-menu");
+            }
+        </script>
+    </body>
+</html>

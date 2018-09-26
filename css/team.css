@@ -1,0 +1,167 @@
+.nav-bar a:nth-child(5) {
+    color: #0B24FB;
+    font-weight: 500;
+}
+
+.team-main {
+    width: 100%;
+    text-align: center;
+}
+
+.main-title {
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
+    border-left: 1px rgba(0, 0, 0, 0.1) solid;
+    border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    border-bottom: 3px #0B24FB solid;
+}
+
+.team-block-container {
+    width: 100%;
+    text-align: center;
+}
+
+.team-block {
+    vertical-align: top;
+    width: 250px;
+    margin: 20px;
+    display: inline-block;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+.team-block-image {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.team-block-bio {
+    width: 100%;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.team-block-bio h2 {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.team-block-bio p {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.kendrickod {
+    background-image: url("https://png.pngtree.com/svg/20170504/personal_center__965789.png");
+}
+
+.phdinkappa  {
+    background-image: url("https://png.pngtree.com/svg/20170504/personal_center__965789.png");
+}
+
+.jonathanpulgarin {
+    background-image: url("https://png.pngtree.com/svg/20170504/personal_center__965789.png");
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    margin: 20px;
+}
+
+p {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.primary-btn-container {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.primary-btn {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #0B24FB;
+    border: 2px #0B24FB solid;
+    border-radius: 50px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    padding: 10px 20px 10px 20px;
+    transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.primary-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1, .main-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1, .main-title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .team-block {
+        width: 200px;
+        margin: 20px;
+        display: inline-block;
+        border: 1px rgba(0, 0, 0, 0.1) solid;
+    }
+    .team-block-image {
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .team-block-bio {
+        width: 100%;
+        padding-top: 20px;
+        background-color: white;
+    }
+    
+    .team-block-bio h2 {
+        font-size: 16px;
+    }
+    
+    .team-block-bio p {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

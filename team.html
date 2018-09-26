@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARTIQUE | TEAM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/team.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png"/>
+    </head>
+    <body>
+        <div class="mobile-menu">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="specifications.html">SPECIFICATIONS</a>
+            <a href="plan.html">PLAN</a>
+            <a href="team.html">TEAM</a>
+        </div>
+        <section class="main-container">
+            <a href="index.html">
+                <img class="logo" src="images/artique-logo-main-blue.png">
+            </a>
+            <div class="nav-bar">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+            </div>
+            <div onclick="menutoggle();" id="hamburger" class="hamburger hamburger--slider">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            <!-- START HERE -->
+            <div class="team-main">
+                <h1 class="main-title">MEET THE TEAM</h1>
+            </div>
+            <div class="team-block-container">
+                <div class="team-block">
+                    <div class="team-block-image kendrickod"></div>
+                    <div class="team-block-bio">
+                        <h2>Kaodilichi Nwuda</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="team-block">
+                    <div class="team-block-image phdinkappa"></div>
+                    <div class="team-block-bio">
+                        <h2>Kaodilichi Nwuda</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="team-block">
+                    <div class="team-block-image jonathanpulgarin"></div>
+                    <div class="team-block-bio">
+                        <h2>Jonathan Pulgarin</h2>
+                        <p>I am a sophomore undergraduate student studying Computer Science (Software Engineering) at Arizona State University. I am currently a freelance Full Stack Developer and Graphic Designer with over four years of experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="primary-btn-container">
+                <a href="about.html" class="primary-btn">View About</a>
+                <a href="specifications.html" class="primary-btn">View Specifications</a>
+                <a href="plan.html" class="primary-btn">View Plan</a>
+            </div>
+        </section>
+        <div class="footer">
+            <a href="index.html">
+                <img class="logo" src="images/artique-logo-main-blue.png">
+            </a>
+            <br>
+            <div class="link-container">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="specifications.html">SPECIFICATIONS</a>
+                <a href="plan.html">PLAN</a>
+                <a href="team.html">TEAM</a>
+                <a href="branding.html">BRANDING</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <p class="copyright">© 2018 ARTIQUE</p>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            function menutoggle() {
+                $("#hamburger").toggleClass("is-active");
+                $("body").toggleClass("page-scroll-deactivate");
+                $(".mobile-menu").toggleClass("active-menu");
+            }
+        </script>
+    </body>
+</html>
