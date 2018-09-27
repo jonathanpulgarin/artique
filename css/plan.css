@@ -30,31 +30,49 @@ h1 {
 
 .info-container {
     display: inline-block;
-    width: calc(90% - 80px);
+    width: 90%;
+    padding-top: 20px;
+}
+
+.special-p {
     background-color: white;
-    padding: 40px;
     border: 1px rgba(0, 0, 0, 0.1) solid;
+    padding: 20px;
 }
 
 p {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size: 22px;
     margin-top: 10px;
-    text-align: left;
-}
-
-.center-text {
     text-align: center;
 }
 
 h2 {
+    font-size: 23px;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
 }
 
-.arial {
-    font-family: sans-serif;
-    margin-top: 50px;
+ul {
+    display: inline-block;
+    width: 70%;
+}
+
+li {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.extra-margin {
+    margin: 20px;
+    text-align: left;
 }
 
 .primary-btn-container {
@@ -86,14 +104,8 @@ h2 {
     p {
         font-size: 18px;
     }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .info-container {
-        width: calc(90% - 40px);
-        padding: 20px;
+    li {
+        font-size: 18px;
     }
 }
 
@@ -101,10 +113,16 @@ h2 {
     h1, .main-title {
         font-size: 30px;
     }
+    h2 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
     h1, .main-title {
         font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
     }
 }

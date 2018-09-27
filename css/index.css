@@ -70,6 +70,7 @@
 
 .thin {
     font-weight: 400;
+    opacity: 0;
 }
 
 .primary {
@@ -80,6 +81,7 @@ h1 .primary {
     background-color: white;
     padding: 5px 10px 5px 10px;
     border: 3px #0B24FB solid;
+    opacity: 0;
 }
 
 .right-vertical-line {
@@ -87,7 +89,7 @@ h1 .primary {
     right: 30px;
     bottom: 30px;
     background-color: #0B24FB;
-    height: 200px;
+    height: 0px;
     width: 3px;
 }
 
@@ -109,7 +111,7 @@ h1 .primary {
     padding: 10px 20px 10px 20px;
     border-radius: 1px;
     border: 2px #0B24FB solid;
-    background-color:#0B24FB;
+    background-color: #0B24FB;
     transition: all 0.4s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -138,6 +140,90 @@ h1 .primary {
     z-index: -2;
 }
 
+.floating {
+	animation: floating 6s cubic-bezier(.25,.8,.25,1) infinite;
+}
+
+.side-to-side {
+	animation: side-to-side 3s cubic-bezier(.25,.8,.25,1) infinite;
+}
+
+.inverse-side-to-side {
+	animation: inverse-side-to-side 7s cubic-bezier(.25,.8,.25,1) infinite;
+}
+
+.expand-up {
+    animation: expand-up 1s cubic-bezier(.25,.8,.25,1) 3.5s forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(.25,.8,.25,1) 2s forwards;
+}
+
+.fade-in-two {
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(.25,.8,.25,1) 1s forwards;
+}
+
+.fade-in-three {
+    opacity: 0;
+    animation: fade-in 1s cubic-bezier(.25,.8,.25,1) 3s forwards;
+}
+
+@keyframes floating {
+	0% {
+		transform: translatey(-50%);
+	}
+	50% {
+		transform: translatey(calc(-50% - 40px));
+	}
+	100% {
+		transform: translatey(-50%);
+	}
+}
+
+@keyframes side-to-side {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-40px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes inverse-side-to-side {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(60px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes expand-up {
+	0% {
+		height: 0px;
+	}
+	100% {
+		height: 200px;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 @media screen and (max-width: 630px) {
     .dots {
